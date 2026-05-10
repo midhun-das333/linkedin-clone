@@ -1,0 +1,71 @@
+.sidebar {
+  flex: 0.2;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  height: fit-content;
+
+  text-align: center;
+}
+
+.sidebar__top {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  border-bottom: 1px solid lightgray;
+
+  padding-bottom: 10px;
+}
+
+.sidebar__top h2 {
+  font-size: 18px;
+}
+
+.sidebar__top h4 {
+  color: gray;
+
+  font-size: 14px;
+}
+
+.sidebar__stats {
+  padding: 10px;
+}
+
+.sidebar__stat {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+.sidebar__statNumber {
+  font-weight: bold;
+
+  color: #0a66c2;
+}
+
+.sidebar__bottom {
+  text-align: left;
+
+  padding: 10px;
+}
+
+.sidebar__recentItem {
+  color: gray;
+
+  font-weight: bold;
+
+  margin-top: 5px;
+
+  cursor: pointer;
+}
+
+.sidebar__recentItem:hover {
+  color: black;
+}
