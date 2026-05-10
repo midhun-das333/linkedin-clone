@@ -9,8 +9,6 @@ import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendIcon from '@mui/icons-material/Send';
 
-import Moment from 'react-moment';
-
 function Post({
   name,
   description,
@@ -34,9 +32,8 @@ function Post({
           <p>{description}</p>
 
           <small>
-            <Moment fromNow>
-              {timestamp?.toDate?.() || timestamp}
-            </Moment>
+            {timestamp?.toDate?.().toLocaleString?.() ||
+              new Date(timestamp).toLocaleString()}
           </small>
 
         </div>
